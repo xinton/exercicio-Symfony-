@@ -1,0 +1,42 @@
+socio:
+    path:  /
+    defaults: { _controller: "VoxSocioBundle:Socio:index" }
+
+socio_show:
+    path:  /{id}/show
+    defaults: { _controller: "VoxSocioBundle:Socio:show" }
+
+socio_new:
+    path:  /new
+    defaults: { _controller: "VoxSocioBundle:Socio:new" }
+
+socio_create:
+    path:  /create
+    defaults: { _controller: "VoxSocioBundle:Socio:create" }
+    requirements: { _method: post }
+
+socio_edit:
+    path:  /{id}/edit
+    defaults: { _controller: "VoxSocioBundle:Socio:edit" }
+
+socio_update:
+    path:  /{id}/update
+    defaults: { _controller: "VoxSocioBundle:Socio:update" }
+    requirements: { _method: post|put }
+
+socio_delete:
+    path:  /{id}/delete
+    defaults: { _controller: "VoxSocioBundle:Socio:delete" }
+    requirements: { _method: post|delete }
+    
+socio_by_id_delete:
+    path:  /delete/{id}
+    defaults: { _controller: "VoxSocioBundle:Socio:deleteById" }
+    requirements: { _method: get }
+    
+
+socio_bulk_action:
+    path:  /bulk-action
+    defaults: { _controller: "VoxSocioBundle:Socio:bulk" }
+    requirements: { _method: post }
+    

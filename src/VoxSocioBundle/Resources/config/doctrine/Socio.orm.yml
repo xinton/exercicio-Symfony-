@@ -1,0 +1,21 @@
+VoxSocioBundle\Entity\Socio:
+    type: entity
+    table: null
+    repositoryClass: VoxSocioBundle\Repository\SocioRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nome:
+            type: string
+            length: 255
+        cpf:
+            type: string
+            length: '11'
+        email:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

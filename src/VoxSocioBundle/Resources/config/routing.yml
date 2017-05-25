@@ -1,0 +1,7 @@
+vox_socio_socio:
+    resource: "@VoxSocioBundle/Resources/config/routing/socio.yml"
+    prefix:   /socio
+
+vox_socio_homepage:
+    path:     /
+    defaults: { _controller: VoxSocioBundle:Default:index }
