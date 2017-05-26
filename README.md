@@ -8,30 +8,30 @@ Foram utilizados os bundles:
 
 Requisitos
 --------------
-PHP 7
-[**Composer**][4]
-MariaDB
+PHP 7  
+[**Composer**][4]  
+MariaDB  
 
 Intruçoes
 --------------
 
 * Depois de clonado o repositorio, acessar o diretorio e executar o comando:
 
-    composer intall
+    composer install
 
 * Criar o database com o nome escolhido durante a configuraçao dos parametros:
 
-    database_host (127.0.0.1):
-    database_port (null):
-    **database_name (symfony): vox**
-    database_user (root):
-    database_password (null):
-    mailer_transport (smtp):
-    mailer_host (127.0.0.1):
-    mailer_user (null):
-    mailer_password (null):
-    locale (en):
-    secret (ThisTokenIsNotSoSecretChangeIt):
+    database_host (127.0.0.1):  
+    database_port (null):  
+    **database_name (symfony): vox**  
+    database_user (root):  
+    database_password (null):  
+    mailer_transport (smtp):  
+    mailer_host (127.0.0.1):  
+    mailer_user (null):  
+    mailer_password (null):  
+    locale (en):  
+    secret (ThisTokenIsNotSoSecretChangeIt):  
 
 * Atualizar o schema
     php app/console doctrine:schema:update --force
