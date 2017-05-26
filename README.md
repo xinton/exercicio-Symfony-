@@ -34,11 +34,12 @@ Intruçoes
     secret (ThisTokenIsNotSoSecretChangeIt):  
 
 * Atualizar o schema
-    php app/console doctrine:schema:update --force
+
+    php app/console doctrine:schema:update --force  
 
 * Iniciar o servidor e acessar a aplicaçao
-    php bin/console server:run
-    localhost:8000
+    php bin/console server:run  
+    localhost:8000  
 
 Obrigado.
 
