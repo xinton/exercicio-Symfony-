@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <meta charset="utf-8">
+        <title>{% block title %}Vox{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Le styles -->
+        <link href="{{ asset('bundles/petkoparacrudgenerator/css/bootstrap.min.css') }}" rel="stylesheet">
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="{{ asset('bundles/petkoparacrudgenerator/images/favicon.ico') }}">
     </head>
+
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+
+        <div class="container">
+        {% block menu %}
+        <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                  <li><a href="{{ path('socio') }}">Socios</a></li>
+                  <li><a href="{{ path('fos_user_security_logout') }}">Logout</a></li>
+                  <li><a href="{{ path('fos_user_security_login') }}">Login</a></li>
+                  <li><a href="{{ path('fos_user_registration_register') }}">Registro</a></li>
+              </ul>
+            </div>
+        {% endblock %}
+
+
+    {% block body %}{% endblock %}
+
+</div>
+{% block javascript %}
+<script src="{{ asset('bundles/petkoparacrudgenerator/js/jquery.min.js') }}"></script>
+<script src="{{ asset('bundles/petkoparacrudgenerator/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('bundles/petkoparacrudgenerator/js/petkopara-crud-generator.js') }}"></script>
+
+{% endblock %}
+</body>
 </html>
