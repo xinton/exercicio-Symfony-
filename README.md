@@ -1,10 +1,11 @@
 Exercicio Programador Vox
 ========================
 
-Este projeto foi feito utilizando o framework [**Symfony**][1] 3.2.8.
-Foram utilizados os bundles:
+Este projeto foi feito utilizando o framework [**Symfony**][1] 3.2.8.  
+Foram utilizados os bundles:  
   * FOSUserBundle v2.0: https://github.com/FriendsOfSymfony/FOSUserBundle
-  * PetkoparaCrudGeneratorBundle v3.0.5: https://github.com/petkopara/PetkoparaCrudGeneratorBundle
+   
+  * PetkoparaCrudGeneratorBundle v3.0.5: https://github.com/petkopara/PetkoparaCrudGeneratorBundle  
 
 Requisitos
 --------------
@@ -15,11 +16,11 @@ MariaDB
 Intruçoes
 --------------
 
-* Depois de clonado o repositorio, acessar o diretorio e executar o comando:
+* **Depois de clonado o repositorio, acessar o diretorio e executar o comando:**
 
     composer install
 
-* Criar o database com o nome escolhido durante a configuraçao dos parametros:
+* **Criar o database com o nome escolhido durante a configuraçao dos parametros:**
 
     database_host (127.0.0.1):  
     database_port (null):  
@@ -33,11 +34,12 @@ Intruçoes
     locale (en):  
     secret (ThisTokenIsNotSoSecretChangeIt):  
 
-* Atualizar o schema
+* **Atualizar o schema**
 
     php app/console doctrine:schema:update --force  
 
-* Iniciar o servidor e acessar a aplicaçao
+* **Iniciar o servidor e acessar a aplicaçao:**  
+
     php bin/console server:run  
     localhost:8000  
 
